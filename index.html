@@ -189,7 +189,7 @@ td .es-button-border-2:hover {
                   <td align="center" valign="top" style="padding:0;Margin:0;width:560px"> 
                    <table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px"> 
                      <tr style="border-collapse:collapse"> 
-                      <td align="center" style="padding:0;Margin:0"><h2 style="Margin:0;line-height:31px;mso-line-height-rule:exactly;font-family:arial, 'helvetica neue', helvetica, sans-serif;font-size:26px;font-style:normal;font-weight:bold;color:#659C35">Your order is on its way</h2></td> 
+                      <td align="center" style="padding:0;Margin:0"><h2 id="teste" style="Margin:0;line-height:31px;mso-line-height-rule:exactly;font-family:arial, 'helvetica neue', helvetica, sans-serif;font-size:26px;font-style:normal;font-weight:bold;color:#659C35">Your order is on its way</h2></td> 
                      </tr> 
                      <tr style="border-collapse:collapse"> 
                       <td align="center" style="padding:0;Margin:0;padding-top:10px"><p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:14px;font-family:arial, 'helvetica neue', helvetica, sans-serif;line-height:21px;color:#333333">Delivery of healthy food is the best solution for business people. Who wants to eat right, look healthy and work productively all day.</p></td> 
@@ -240,7 +240,7 @@ td .es-button-border-2:hover {
                       <td align="left" style="Margin:0;padding-bottom:10px;padding-top:20px;padding-left:20px;padding-right:20px"><h4 style="Margin:0;line-height:120%;mso-line-height-rule:exactly;font-family:arial, 'helvetica neue', helvetica, sans-serif;color:#659C35">SHIPPING ADDRESS:</h4></td> 
                      </tr> 
                      <tr style="border-collapse:collapse"> 
-                      <td align="left" style="padding:0;Margin:0;padding-bottom:20px;padding-left:20px;padding-right:20px"><p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:14px;font-family:arial, 'helvetica neue', helvetica, sans-serif;line-height:21px;color:#333333"> Nome da Rua</p><p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:14px;font-family:arial, 'helvetica neue', helvetica, sans-serif;line-height:21px;color:#333333">78 Somewhere St</p><p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:14px;font-family:arial, 'helvetica neue', helvetica, sans-serif;line-height:21px;color:#333333">Somewhere, Canada 99743</p></td> 
+                      <td align="left" style="padding:0;Margin:0;padding-bottom:20px;padding-left:20px;padding-right:20px"><p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:14px;font-family:arial, 'helvetica neue', helvetica, sans-serif;line-height:21px;color:#333333">Andry Petrin</p><p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:14px;font-family:arial, 'helvetica neue', helvetica, sans-serif;line-height:21px;color:#333333">78 Somewhere St</p><p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-size:14px;font-family:arial, 'helvetica neue', helvetica, sans-serif;line-height:21px;color:#333333">Somewhere, Canada 99743</p></td> 
                      </tr> 
                    </table></td> 
                  </tr> 
@@ -507,6 +507,28 @@ td .es-button-border-2:hover {
        </table></td> 
      </tr> 
    </table> 
-  </div>  
+  </div>
+  <script>
+    function myFunction() {
+        const queryString = window.location.search
+        const urlParams = new URLSearchParams(queryString)
+        const product = urlParams.get('product')
+        return product
+        // //var node = document.createElement("LI");
+        // //var textnode = document.createTextNode(product);
+        // //node.appendChild(textnode);
+        // //document.getElementById("myList").appendChild(node);
+      
+      
+      
+      
+
+    }
+    // console.log(myFunction())
+    document.getElementById("teste").innerHTML = myFunction() 
+
+    myFunction()
+
+</script>
  </body>
 </html>
